@@ -155,3 +155,26 @@ body {
 #interpolation-image-wrapper img {
   border-radius: 5px;
 }
+/* Teaser layout: center everything */
+.teaser-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make the radar figure smaller (responsive + capped) */
+.teaser-media {
+  width: min(70%, 720px);  /* 调小：比如 min(60%, 560px) */
+  margin: 0 auto 1rem auto;
+}
+
+.teaser-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Subtitle spacing (keep Bulma font & sizing) */
+.hero.teaser .subtitle {
+  margin-top: 0.5rem;
+}
