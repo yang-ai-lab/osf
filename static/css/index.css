@@ -164,7 +164,7 @@ body {
 
 /* Make the radar figure smaller (responsive + capped) */
 .teaser-media {
-  width: min(70%, 720px);  
+  width: min(80%, 720px);  
   margin: 0 auto 1rem auto;
 }
 
