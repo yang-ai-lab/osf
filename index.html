@@ -198,20 +198,39 @@
         <img src="./static/images/3_motive.svg" alt="Radar" />
       </figure>
       <p class="subtitle has-text-centered">
-        OSF consistently achieves state-of-the-art on downstream tasks.
+        Inference with full versus missing channels. Existing sleep FM fails on inference time missing channel samples.
       </p>
     </div>
       <p>
-        Inference with full versus missing channels. Existing sleep FM fails on inference time missing channel samples.
-      </p>
-      <p>
         Finding 1: Existing sleep FMs fail to generalize under missing-channel inference, 
-        motivating pre-training designs that explicitly handle channel incompleteness..
+        motivating pre-training designs that explicitly handle channel incompleteness.
       </p>
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="content">
+      <h2>Main Findings</h2>
+      <hr>
+
+      <h3>Channel-Invariant Pre-training Improves Robustness and Transfer</h3>
+      <div class="hero-body teaser-body">
+      <figure class="image teaser-media">
+        <img src="./static/images/4_augmentation.svg" alt="Radar" />
+      </figure>
+      <p class="subtitle has-text-centered">
+        Illustration of considered augmentations. We consider time-wise masking and channel masking strategies.
+      </p>
+    </div>
+      <p>
+        Finding 2: Explicitly encouraging channel-invariant feature learning during pre-training 
+        improves robustness and downstream transfer, particularly for contrastive and distillation-based methods.
+      </p>
+    </div>
+  </div>
+</section>
 
 
 
