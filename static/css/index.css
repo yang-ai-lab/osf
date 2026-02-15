@@ -178,3 +178,20 @@ body {
 .hero.teaser .subtitle {
   margin-top: 0.5rem;
 }
+
+/* Make the table figure bigerrrrrrr */
+.teaser-media {
+  width: min(100%, 1080px);  
+  margin: 0 auto 1rem auto;
+}
+
+.teaser-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Subtitle spacing (keep Bulma font & sizing) */
+.hero.teaser .subtitle {
+  margin-top: 0.5rem;
+}
