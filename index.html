@@ -298,12 +298,19 @@ OSF achieves state-of-the-art performance on both sleep staging and event detect
         <img src="./static/images/missing_inference.svg"/>
       </figure>
       <p class="subtitle has-text-centered">
-        Table 2: Sleep staging and sleep event detection. OSF achieves the best overall performance among all compared methods.
+        Table 2: Linear probing results under realistic missing-channel settings. OSF is more robust to missing channels.
       </p>
     </div>
       <p>
-Guided by our identified pre-training recipts, we propose our Open Sleep Foundation (OSF) model family. We evaluate models on sleep staging and four sleep event detection tasks. As shown in the table,
-OSF achieves state-of-the-art performance on both sleep staging and event detection under linear probing and fine-tuning.
+        As shown in table, OSF consistently outperforms SleepFM across these missing-channel settings. 
+        Specifically, (1) OSF makes better use of the available channels.
+        With brain-activity channels only, it achieves stronger sleep staging and arousal detection, 
+        suggesting stronger brain-related representations. 
+        Similarly, with respiratory channels only, it achieves stronger performance on hypopnea and oxygen desaturation. 
+        (2) OSF is more robust when key modalities are missing. When respiratory signals are removed, 
+        both methods degrade on hypopnea and oxygen desaturation, but OSF remains consistently better. 
+        Conversely, when brain-related channels are unavailable, sleep staging becomes much harder for both models; 
+        nevertheless, OSF better uses the remaining channels and yields stronger performance.
       </p>
     </div>
   </div>
