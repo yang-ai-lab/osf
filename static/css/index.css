@@ -164,7 +164,7 @@ body {
 
 /* Make the radar figure smaller (responsive + capped) */
 .teaser-media {
-  width: min(70%, 720px);  /* 调小：比如 min(60%, 560px) */
+  width: min(70%, 720px);  
   margin: 0 auto 1rem auto;
 }
 
