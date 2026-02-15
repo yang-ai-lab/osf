@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+        content="OSF: On Pre-training and Scaling of Sleep Foundation Models">
+  <meta name="keywords" content="Foundation Model, Polysomnography, Self-Supervised Learning">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>OSF: On Pre-training and Scaling of Sleep Foundation Models</title>
 
@@ -192,16 +192,22 @@
       <h2>Main Findings</h2>
       <hr>
 
-      <h3>Existing Sleep Foundation Model Fails on Inference-Time Missing-Channel</h3>
-      <p>
-        Todo.
+      <h3>Inference-time on Missing-channel is Challenging</h3>
+      <div class="hero-body teaser-body">
+      <figure class="image teaser-media">
+        <img src="./static/images/3_motive.svg" alt="Radar" />
+      </figure>
+      <p class="subtitle has-text-centered">
+        OSF consistently achieves state-of-the-art on downstream tasks.
       </p>
-
-      <ul>
-        <li>Todo</li>
-        <li>Todo</li>
-        <li>Todo</li>
-      </ul>
+    </div>
+      <p>
+        Inference with full versus missing channels. Existing sleep FM fails on inference time missing channel samples.
+      </p>
+      <p>
+        Finding 1: Existing sleep FMs fail to generalize under missing-channel inference, 
+        motivating pre-training designs that explicitly handle channel incompleteness..
+      </p>
     </div>
   </div>
 </section>
