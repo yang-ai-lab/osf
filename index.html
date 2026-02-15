@@ -183,7 +183,17 @@
     </div>
     <!--/ Abstract. -->
 
-
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="content">
+      <h2>Motivation</h2>
+      <p>
+        Which pre-training and scaling design choices truly improve the generalization of sleep FMs, 
+        especially under cohort shift and missing-channel inference?
+      </p>
+    </div>
+  </div>
+</section>
 
 
 <section class="section">
@@ -257,27 +267,48 @@
 <section class="section">
   <div class="container is-max-desktop">
     <div class="content">
-      <h2>Main Results</h2>
+      <h2>Experiment Results</h2>
       <hr>
-      <h3>Channel-Invariant Pre-training Improves Robustness and Transfer</h3>
+      <h3>Main Results</h3>
       <div class="hero-body teaser-body">
       <figure class="image table-media">
         <img src="./static/images/main_table.svg"/>
       </figure>
       <p class="subtitle has-text-centered">
-        Table 1: Illustration of considered augmentations. We consider time-wise masking and channel masking strategies.
+        Table 1: Sleep staging and sleep event detection. OSF achieves the best overall performance among all compared methods.
       </p>
     </div>
       <p>
-        Finding 3: Explicitly encouraging channel-invariant feature learning during pre-training 
-        improves robustness and downstream transfer, particularly for contrastive and distillation-based methods.
+Guided by We evaluate models on four sleep event detection tasks. As shown in the table,
+OSF achieves state-of-the-art performance on both sleep staging and event detection under linear probing and fine-tuning.
       </p>
     </div>
   </div>
 </section>
 
+    
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="content">
 
+      <h3>Missing-channel Inference</h3>
+      <div class="hero-body teaser-body">
+      <figure class="image table-media">
+        <img src="./static/images/missing_inference.svg"/>
+      </figure>
+      <p class="subtitle has-text-centered">
+        Table 2: Sleep staging and sleep event detection. OSF achieves the best overall performance among all compared methods.
+      </p>
+    </div>
+      <p>
+Guided by our identified pre-training recipts, we propose our Open Sleep Foundation (OSF) model family. We evaluate models on sleep staging and four sleep event detection tasks. As shown in the table,
+OSF achieves state-of-the-art performance on both sleep staging and event detection under linear probing and fine-tuning.
+      </p>
+    </div>
+  </div>
+</section>
 
+    
     
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
