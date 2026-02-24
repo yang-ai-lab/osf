@@ -523,16 +523,40 @@ img { max-width: 100%; height: auto; display: block; }
   font-style: italic;
 }
 
+/* ===== Grid Label ===== */
+.grid-label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.grid-label:first-of-type {
+  margin-top: 0;
+}
+
 /* ===== Results Grid ===== */
 .results-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.results-grid.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 768px) {
+  .results-grid.three-col { grid-template-columns: 1fr 1fr; }
 }
 
 @media (max-width: 640px) {
   .results-grid { grid-template-columns: 1fr; }
+  .results-grid.three-col { grid-template-columns: 1fr; }
 }
 
 .result-item {
@@ -544,15 +568,12 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .result-item:hover {
-  border-color: rgba(37, 99, 235, 0.25);
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.08);
 }
 
 .result-item h4 {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--blue);
   margin-bottom: 0.4rem;
 }
 
@@ -560,6 +581,36 @@ img { max-width: 100%; height: auto; display: block; }
   color: var(--text-secondary);
   font-size: 0.85rem;
   line-height: 1.7;
+}
+
+/* Blue variant (default/evaluation settings) */
+.result-item.blue {
+  border-color: rgba(37, 99, 235, 0.15);
+  background: rgba(37, 99, 235, 0.03);
+}
+
+.result-item.blue:hover {
+  border-color: rgba(37, 99, 235, 0.3);
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
+}
+
+.result-item.blue h4 {
+  color: var(--blue);
+}
+
+/* Purple variant (task types) */
+.result-item.purple {
+  border-color: rgba(124, 58, 237, 0.15);
+  background: rgba(124, 58, 237, 0.03);
+}
+
+.result-item.purple:hover {
+  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.1);
+}
+
+.result-item.purple h4 {
+  color: #7c3aed;
 }
 
 /* ===== BibTeX ===== */

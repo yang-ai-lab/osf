@@ -220,22 +220,35 @@
         </p>
       </div>
 
-      <div class="results-grid">
-        <div class="result-item">
+      <h3 class="grid-label">Task Types</h3>
+      <div class="results-grid three-col">
+        <div class="result-item purple">
           <h4>Sleep Staging</h4>
           <p>Best overall performance on multi-class sleep stage classification across diverse cohorts.</p>
         </div>
-        <div class="result-item">
+        <div class="result-item purple">
           <h4>Event Detection</h4>
-          <p>Superior detection of sleep events including arousal, hypopnea, and oxygen desaturation.</p>
+          <p>Superior detection of sleep events including arousal, hypopnea, oxygen desaturation, and central apnea.</p>
         </div>
-        <div class="result-item">
+        <div class="result-item purple">
+          <h4>Disease Prediction</h4>
+          <p>Extracted embeddings better capture disease-related information.</p>
+        </div>
+      </div>
+
+      <h3 class="grid-label">Evaluation Settings</h3>
+      <div class="results-grid three-col">
+        <div class="result-item blue">
           <h4>Linear Probing</h4>
           <p>Strong performance with frozen features, demonstrating high-quality representations.</p>
         </div>
-        <div class="result-item">
+        <div class="result-item blue">
           <h4>Fine-tuning</h4>
           <p>Further gains when adapting to specific downstream tasks with full model training.</p>
+        </div>
+        <div class="result-item blue">
+          <h4>Few-shot Learning</h4>
+          <p>Sample efficiency in adapting to downstream tasks.</p>
         </div>
       </div>
 
