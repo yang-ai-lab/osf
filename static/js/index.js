@@ -48,12 +48,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Mobile: tap to open dropdown
+  // Click-based dropdown toggle (closes others, closes on outside click)
   var dropdownTriggers = document.querySelectorAll('.dropdown-trigger');
   dropdownTriggers.forEach(function (trigger) {
     trigger.addEventListener('click', function (e) {
       e.preventDefault();
-      this.closest('.nav-dropdown').classList.toggle('open');
+      e.stopPropagation();
+      var parent = this.closest('.nav-dropdown');
+      var wasOpen = parent.classList.contains('open');
+      document.querySelectorAll('.nav-dropdown.open').forEach(function (d) {
+        d.classList.remove('open');
+      });
+      if (!wasOpen) parent.classList.add('open');
+    });
+  });
+
+  document.addEventListener('click', function () {
+    document.querySelectorAll('.nav-dropdown.open').forEach(function (d) {
+      d.classList.remove('open');
     });
   });
 

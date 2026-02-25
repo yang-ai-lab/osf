@@ -130,7 +130,7 @@ img { max-width: 100%; height: auto; display: block; }
   transition: transform 0.2s;
 }
 
-.nav-dropdown:hover .dropdown-trigger i {
+.nav-dropdown.open .dropdown-trigger i {
   transform: rotate(180deg);
 }
 
@@ -152,7 +152,7 @@ img { max-width: 100%; height: auto; display: block; }
   z-index: 100;
 }
 
-.nav-dropdown:hover .dropdown-menu {
+.nav-dropdown.open .dropdown-menu {
   display: block;
 }
 
@@ -664,6 +664,55 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 .site-footer p a:hover { color: var(--text-secondary); }
+
+/* ===== News List ===== */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  background: rgba(37, 99, 235, 0.04);
+  border: 1px solid rgba(37, 99, 235, 0.15);
+  border-left: 3px solid var(--sky);
+  border-radius: 10px;
+  padding: 0.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.news-item {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(37, 99, 235, 0.07);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  color: var(--sky-dark);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  min-width: 100px;
+}
+
+.news-text {
+  color: var(--text-secondary);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.news-text a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.news-text a:hover {
+  color: var(--blue-dark);
+}
 
 /* ===== Table Media (for result tables) ===== */
 .table-media {
