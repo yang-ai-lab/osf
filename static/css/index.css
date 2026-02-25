@@ -394,7 +394,8 @@ img { max-width: 100%; height: auto; display: block; }
   text-align: center;
 }
 
-.teaser-block img {
+.teaser-block img,
+.teaser-block video {
   width: 100%;
   max-width: 720px;
   border-radius: 10px;
